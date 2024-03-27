@@ -1,0 +1,54 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    button{
+        height: 2rem;
+        width: 2rem;
+    }
+  </style>
+  <body>
+    <input type="text" id="name">
+    <input type="text" id="pass">
+  <button id="submit">asd</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+   
+
+    <script>
+const firebaseConfig = {
+    apiKey: "AIzaSyCJKq2f6s8JXDvSvaTj2PIaDneQaF5rehE",
+    authDomain: "studentdata-c32dc.firebaseapp.com",
+    databaseURL: "https://studentdata-c32dc-default-rtdb.firebaseio.com",
+    projectId: "studentdata-c32dc",
+    storageBucket: "studentdata-c32dc.appspot.com",
+    messagingSenderId: "864759528777",
+    appId: "1:864759528777:web:6ccd85c969713304d56e98",
+    measurementId: "G-23C5HBS81T"
+  };
+firebase.initializeApp(firebaseConfig)
+var fireb = firebase.database().ref("studentData");
+document.getElementById('submit').addEventListener('click',()=>{
+    console.log("H")
+    let name=document.getElementById('name').value;
+    let pass=document.getElementById('pass').value;
+
+
+let newData=fireb.push()
+newData.set({
+    name:name,
+    pass:pass
+});
+
+
+})
+
+    </script>
+  </body>
+  </html>
