@@ -14,8 +14,5 @@ Web Site : The web site for generating dynamic QR codes is built using HTML, CSS
 Mobile Application : The student mobile application is developed using JAVA , XML and Android Studio. Firebase used for authentication.
 Face Recognition : Face++ API is integrated for face matching.
 Database: Firebase is used for managing the database and user authentication.
-Contributors
-Abhishek Kaintura - Dynamic QR
-Ayush khanduri - Android Application
-Sumit Rai - Teacher Dashboard
+
 
