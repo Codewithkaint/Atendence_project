@@ -15,6 +15,7 @@ Mobile Application : The student mobile application is developed using JAVA , XM
 Face Recognition : Face++ API is integrated for face matching.
 Database: Firebase is used for managing the database and user authentication.
 Contributors
+Abhishek Kaintura - Dynamic QR
 Ayush khanduri - Android Application
 Sumit Rai - Teacher Dashboard
-Abhishek Kaintura - Dynamic QR
+
